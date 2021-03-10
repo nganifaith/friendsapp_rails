@@ -1,0 +1,23 @@
+<div class="jumbotron">
+  <h1 class="display-4">Details</h1>
+  <p class="lead"><strong>First name:</strong>
+  <%= @friend.first_name %></p>
+  <hr class="my-4">
+  <p class="lead"><strong>Last name:</strong>
+  <%= @friend.last_name %></p>
+  <hr class="my-4">
+  <p class="lead"><strong>Email:</strong>
+  <%= @friend.email %></p>
+  <hr class="my-4">
+  <p class="lead"><strong>Phone:</strong>
+  <%= @friend.phone %></p>
+
+  <hr class="my-4">
+  <p class="lead"><strong>Twitter:</strong>
+  <%= @friend.twiiter %></p>
+  
+</div>
+
+
+<%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-info"%> 
+<%= link_to 'Back', friends_path, class:"btn btn-dark" %>
